@@ -14,7 +14,7 @@ const Formupdate = () => {
 
     useEffect(() => {
         getupdatedetails()
-    })
+    },[])
 
     const getupdatedetails = async () => {
         let result = await fetch(`https://zepotohbackend.onrender.com/updategetUser-Details/${params.id}`);
@@ -24,7 +24,7 @@ const Formupdate = () => {
         setLname(result.Lname)
         setEmail(result.Email)
         setPhoneno(result.Phoneno)
-        setAddress(result.Address)
+        setAddress(result.Address)d
    }
 
 
