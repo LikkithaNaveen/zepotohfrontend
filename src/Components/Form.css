@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif;
+  }
+
+.grid-container{
+  display:grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto  ;
+  gap: 30px;
+  background: #1d2b3a;
+
+ 
+}
+
+.grid-container > div {
+ 
+  text-align: center;
+
+
+}
+
+  .inputbox{
+  position: relative;
+  width:350px;
+  margin-top: 25px;
+  font-size: 0.75em;
+}
+
+
+.inputbox  input{
+  width: 100%;
+  padding: 22px;
+  border: 1px solid rgb(255, 255, 255,0.25);
+  background:#1d2b3a;
+  border-radius: 5px ;
+  outline: none;
+  color: rgb(253, 249, 249);
+  font-size: 1em;
+  
+}
+
+.inputbox span{
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color:rgb(240, 236, 236) ;
+  text-transform: uppercase;
+  transition:0.5s
+} 
+.inputbox input:valid ~span,
+.inputbox input:focus ~span
+{
+  color:#00dfc4;
+  transform: translateX(10px) translateY(-7px) ;
+  font-size: 0.75em;
+  background:#1d2b3a ;
+  border-left: 1px solid #00dfc4 ;
+  border-right: 1px solid #00dfc4 ;
+  letter-spacing: 0.3em;
+}
+.button{
+  color: white;
+  background:#448b91 ;
+  border: 1px solid black;
+  font-weight: bolder;
+  
+}
+
+
+/* table */
+
