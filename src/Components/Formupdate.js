@@ -24,7 +24,7 @@ const Formupdate = () => {
         setLname(result.Lname)
         setEmail(result.Email)
         setPhoneno(result.Phoneno)
-        setAddress(result.Address)d
+        setAddress(result.Address)
    }
 
 
