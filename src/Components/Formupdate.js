@@ -17,7 +17,7 @@ const Formupdate = () => {
     })
 
     const getupdatedetails = async () => {
-        let result = await fetch(`http://localhost:8000/updategetUser-Details/${params.id}`);
+        let result = await fetch(`https://zepotohbackend.onrender.com/updategetUser-Details/${params.id}`);
         result = await result.json();
         console.warn(result)
         setFname(result.Fname)
