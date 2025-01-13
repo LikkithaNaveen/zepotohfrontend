@@ -31,7 +31,7 @@ const Formupdate = () => {
     const Updateformdetails = async () => {
         //console.log(name,course,language,taskdetails,assigndate,completedate,desc)
         let result = await fetch(`https://zepotohbackend.onrender.com/updategetUser-Details/${params.id}`,{
-            method: "put",
+            method: "Put",
             body: JSON.stringify({ Fname, Lname, Email, Phoneno, Address }),
             headers: {
               'Content-Type': 'application/json'

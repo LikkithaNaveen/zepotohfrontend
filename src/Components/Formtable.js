@@ -27,7 +27,31 @@ const Formtable = () => {
         }
 
     }
+
+    const search=async(event)=>{
+      let key=event.target.value;
+      if(key){
+          let result=await fetch(`https://zepotohbackend.onrender.com/getUser-Details/search/${key}`)
+          //     headers:{
+          //                 authorization:`Bearer ${JSON.parse(localStorage.getItem('token'))}`
+          //             }
+          // });
+          result=await result.json()
+          if(result)
+          {
+              setadduser(result)
+          }
+          else{
+            getAddusers()
+          }
+          
+
+      }
+  }
   return (
+
+    <>
+    
     <div class="container">
 	<table>
 		<thead>
@@ -68,6 +92,7 @@ const Formtable = () => {
 		</tbody>
 	</table>
 </div>
+</>
   )
 }
 

@@ -78,4 +78,41 @@ tbody {
       text-transform: uppercase;
       cursor: pointer;
   }
+  .wrap{
+	width: 20%;
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  .search {
+	width: 100%;
+	position: relative;
+	display: flex;
+  }
+  .searchTerm {
+	width: 100%;
+	border: 3px solid rgb(12, 71, 95);
+	border-right: none;
+	padding: 5px;
+	height: 35px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	color: #9DBFAF;
+  }
   
+  .searchTerm:focus{
+	color: rgb(12, 71, 95);
+  }
+  
+  .searchButton {
+	width: 40px;
+	height: 35px;
+	border: 1px solid rgb(12, 71, 95);
+	background: rgb(12, 71, 95);
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+  }
